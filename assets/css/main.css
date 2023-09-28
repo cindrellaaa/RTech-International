@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* navbar start */
+  nav {
+    background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+    border-radius: 50px !important;
+    padding: 0 40px !important;
+}
+
+a.nav-link {
+    margin: 10px;
+    padding: 10px 20px !important;
+    color: #ffffff;
+    border-radius: 50px;
+}
+
+a.nav-link:hover {
+    color: #272727;
+    background: #e7e7e7;
+}
+
+.navbar-toggler {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.navbar-toggler:active {
+    outline: none;
+    border: none;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.navbar-toggler img {
+    transition: width 0.15s ease-in-out;
+}
+
+.navbar-toggler.clicked img {
+    width: 75px;
+}
+
+.nav-item img{
+  width: 120px;
+  height: 60px;
+}
+  /* navbar end */
+
+/* footer start */
+
+.footer-section ul {
+    margin: 0px;
+    padding: 0px;
+  }
+  .footer-section {
+  background: #0e2939;
+  position: relative;
+  }
+  .footer-cta {
+  border-bottom: 1px solid #373636;
+  }
+  .single-cta i {
+  color: rgb(199, 67, 255);
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+  }
+  .cta-text {
+  padding-left: 15px;
+  display: inline-block;
+  }
+  .cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+  }
+  .cta-text span {
+  color: #fff;
+  font-size: 15px;
+  }
+  .footer-content {
+  position: relative;
+  z-index: 2;
+  }
+  .footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+  }
+  .footer-logo {
+  margin-bottom: 30px;
+  }
+  .footer-logo img {
+    max-width: 100px;
+  }
+  .footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: #fff;
+  line-height: 28px;
+  }
+  .footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+  }
+  .footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+  }
+  .footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+  }
+  .facebook-bg{
+  background: #3B5998;
+  }
+  .linkedin-bg{
+  background: #55ACEE;
+  }
+  .instagram-bg{
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  }
+  .footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+  }
+  .footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: rgb(199, 67, 255);
+  }
+  .footer-widget ul li {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  margin-bottom: 12px;
+  }
+  .footer-widget ul li a:hover{
+  color: rgb(199, 67, 255);
+  }
+  .footer-widget ul li a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: capitalize;
+  }
+  .subscribe-form {
+  position: relative;
+  overflow: hidden;
+  }
+  .subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #2E2E2E;
+  border: 1px solid #2E2E2E;
+  color: #fff;
+  }
+  .subscribe-form button {
+    position: absolute;
+    right: 0;
+    background: rgb(199, 67, 255);
+    padding: 13px 20px;
+    border: 1px solid rgb(199, 67, 255);
+    top: 0;
+  }
+  .subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+  }
+  .copyright-area{
+  background: #202020;
+  padding: 25px 0;
+  }
+  .copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+  }
+  .copyright-text p a{
+  color: rgb(199, 67, 255);
+  }
+  .footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+  }
+  .footer-menu li:hover a{
+  color: rgb(199, 67, 255);
+  }
+  .footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+  }
+
+  /* footer end */
