@@ -6,12 +6,53 @@
     font-family: "Josefin Sans", sans-serif;
   }
 
+  h1 {
+    font-family: Visuelt Pro;
+    font-size: 50px;
+    font-weight: 700;
+    color: #333570;
+  }
+  
+  .heading-section .container{
+    text-align: center;
+  }
+  
+  .heading {
+    position: relative;
+  }
+  .heading:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to top, #D0F3F4 50%, transparent 50%);
+    animation-name: highlight;
+    animation-duration: 3s;
+  }
+  
+  @keyframes highlight {
+    0% {
+      width: 0;
+      opacity: 0;
+    }
+  
+    50% {
+      width: 100%;
+      opacity: 1;
+    }
+  
+  }
+
   h2{
     font-family: 'Inter', sans-serif;
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 25px;
-    background: -webkit-linear-gradient(90deg, #2376ae, #c16ecf);
+    background: white;
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -300,9 +341,31 @@
 
 /* our services end */
 
+/* information technology start */
+.info-sec .example img{
+  width: 100px;
+  height: 100px;
+}
 
+.info-sec ul{
+  margin-top: 1rem;
+  padding-left: 0;
+}
 
+.info-sec li{
+  list-style: none; 
+  margin: 5px;
+}
 
+.info-sec li i{
+  font-size: 20px;
+  color: rgb(199, 67, 255);
+}
+
+.info-sec p{
+  text-align: justify;
+}
+/* information technology end */
 
 
 
