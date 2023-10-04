@@ -1,0 +1,211 @@
+/* hero section start */
+
+.wrap img {
+  max-width: 100%;
+  width: 100%;
+}
+
+.wrap {
+  position: relative;
+  z-index: 100;
+  padding: 0 60px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.wrap:after {
+  content:'';
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.slider {
+  position: relative;
+  z-index: 200;
+  padding: 0 0px;
+  margin: 5rem auto;
+  max-width: 800px;
+  width: 100%;
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 50px;
+  line-height: 50px;
+  margin-top: -25px;
+  border: none;
+  background: transparent;
+  color: #0e2939;
+  font-family: monospace;
+  font-size: 5rem;
+  z-index: 300;
+  outline: none;
+}
+
+.slick-prev {
+  left: -50px;
+  text-align: left;
+}
+
+.slick-next {
+  right: -50px;
+  text-align: right;
+}
+
+
+
+.item.slick-slide {
+  width: 400px;
+  height: 400px !important;
+  transition: transform .4s;
+  position: relative; 
+}
+
+.slick-slide:after {
+  content:'';
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,.5);
+  transition: transform .4s;
+}
+
+.item.slick-slide {
+  transform: scale(0.7)  translate(640px);
+}
+
+.item.slick-slide.slick-center + .slick-slide {
+  transform: scale(0.8) translate(-250px);
+  z-index: 10;
+}
+
+.item.slick-slide.slick-center + .slick-slide + .item.slick-slide {
+  transform: scale(0.7)  translate(-640px);
+  z-index: 5;
+}
+
+.item.slick-slide.slick-active {
+  transform: scale(0.8) translate(250px);
+}
+
+.item.slick-slide.slick-center {
+  /* margin: 0 -10%; */
+  transform: scale(1);
+  z-index: 30;
+}
+
+.slick-center:after {
+  opacity: 0;
+}
+
+/* hero section end */
+
+/* about section start */
+.why-box{
+    margin-bottom: 40px;
+}
+
+.why-us .why-box {
+    padding: 30px;
+    background: #0e2939;
+    color: #fff;
+  }
+  
+  .why-us .why-box h3 {
+    font-weight: 700;
+    font-size: 34px;
+    margin-bottom: 30px;
+  }
+  
+  .why-us .why-box p {
+    margin-bottom: 30px;
+  }
+  
+  .why-us .why-box .more-btn {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 6px 30px 8px 30px;
+    color: #fff;
+    border-radius: 50px;
+    transition: all ease-in-out 0.4s;
+    text-decoration: none;
+  }
+  
+  .why-us .why-box .more-btn:hover {
+    color: #0e2939;
+    background: #fff;
+  }
+  
+  .why-us .icon-box {
+    text-align: center;
+    background: #fff;
+    padding: 40px 30px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(55, 55, 63, 0.1);
+    transition: 0.3s;
+  }
+  
+  .why-us .icon-box i {
+    color: #0e2939;
+    margin-bottom: 30px;
+    font-size: 32px;
+    margin-bottom: 30px;
+    background: rgb(136, 29, 181, 0.1);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+  }
+  
+  .why-us .icon-box h4 {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 0 30px 0;
+    font-family: var(--font-secondary);
+  }
+  
+  .why-us .icon-box p {
+    font-size: 15px;
+    color: #6c757d;
+  }
+  
+  @media (min-width: 1200px) {
+    .why-us .icon-box:hover {
+      transform: scale(1.1);
+    }
+  }
+
+/* about section end */
+
+/* services section start */
+
+.services .btn {
+  background-color: #0e2939;
+  color: #fff;
+  display: inline-block;
+  cursor: pointer;
+  border: 2px solid #fff;
+  padding: 0.5em 2em;
+  font-size: 1.1em;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+
+.services .btn:hover {
+  border: 2px solid #0e2939;
+  background-color: #fff;
+  color: rgb(136, 29, 181);
+}
+/* services section end */
