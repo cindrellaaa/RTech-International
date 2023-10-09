@@ -63,7 +63,7 @@
     -webkit-text-fill-color: transparent;
   }
 
-  .section1, .info-sec, #about, .why-us{
+  .section1, .info-sec, #about, .why-us, .justify{
     text-align: justify; 
   }
 

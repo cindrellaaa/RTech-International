@@ -50,6 +50,7 @@
   }
   
   .section1 .text-wrapper{
+    margin-left: 100px;
     width: 50%;
   }
   
@@ -90,12 +91,14 @@
   
     .section1 .img-wrapper,
     .section1 .text-wrapper {
+      margin-left: 0px;
       width: 100%;
     }
   
     .section1 .img {
       display: none;
     }
+
   }
   
   @media screen and (max-width: 480px) {
@@ -247,7 +250,7 @@
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  width: 24rem;
+  width: 20rem;
 }
 
 .service4 {
