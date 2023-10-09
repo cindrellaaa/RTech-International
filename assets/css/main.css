@@ -63,7 +63,7 @@
     -webkit-text-fill-color: transparent;
   }
 
-  .section1, .info-sec, #about, .why-us, .justify{
+  .section1, .info-sec, #about, .why-us, .justify, .about{
     text-align: justify; 
   }
 
@@ -104,12 +104,10 @@ a.nav-link:hover {
     box-shadow: none;
 }
 
-.navbar-toggler img {
+.navbar-toggler i {
     transition: width 0.15s ease-in-out;
-}
-
-.navbar-toggler.clicked img {
-    width: 75px;
+    color: white;
+    font-size: 30px;
 }
 
 .hero img{
@@ -120,6 +118,25 @@ a.nav-link:hover {
 .dropdown-menu li{
   padding: 10px;
 } 
+
+@media screen and (max-width: 768px) {
+  .dropdown-menu li{
+    padding: 0px;
+  } 
+
+  .container-fluid{
+    padding: 0px;
+  }
+
+  .hero img{
+    width: 100px;
+    height: 50px;
+  }
+
+  .navbar{
+    padding: 0 20px !important;
+  }
+}
 
 /* navbar end */
 

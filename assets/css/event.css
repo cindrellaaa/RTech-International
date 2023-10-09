@@ -58,8 +58,6 @@
   text-align: right;
 }
 
-
-
 .item.slick-slide {
   width: 400px;
   height: 400px !important;
@@ -98,7 +96,6 @@
 }
 
 .item.slick-slide.slick-center {
-  /* margin: 0 -10%; */
   transform: scale(1);
   z-index: 30;
 }

@@ -16,4 +16,10 @@
     background-color: #fff;
     color: rgb(136, 29, 181); 
 } 
+
+@media screen and (max-width: 480px) {
+    .tech-hero .col img{
+        width: 350px
+    }
+  }
 /* services section end */
