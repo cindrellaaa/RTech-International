@@ -17,7 +17,7 @@
     color: rgb(136, 29, 181); 
 } 
 
-@media screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
     .tech-hero .col img{
         width: 350px
     }
