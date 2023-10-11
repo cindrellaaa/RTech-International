@@ -23,6 +23,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- AOS CSS File -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.css"
+    />
     <!-- Custom CSS file -->
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="stylesheet" href="./assets/css/index.css" />
@@ -113,78 +118,80 @@
     <!-- hero section end -->
 
     <!-- about us section start -->
-    <section class="section1" id="tab2">
-      <div class="container">
-        <div class="content-wrapper">
-          <div class="img-wrapper">
-            <div class="img">
-              <img src="./assets/images/index/about.png" alt="" />
-            </div>
-          </div>
-          <div class="text-wrapper">
-            <h2 class="title">About Us</h2>
-            <p class="text">
-              RTech is a dynamic company specializing in Information Technology,
-              Digital Marketing Training, Event Management, and Technical
-              Services (MEP). With a commitment to excellence, we deliver
-              innovative solutions to meet diverse client needs.
-            </p>
-            <p class="text">
-              Our experienced team ensures seamless integration of technology,
-              flawless events, and top-notch technical services, making us a
-              trusted industry leader.
-            </p>
-            <div class="btn-wrapper">
-              <a href="./frontend/contact.html" class="btn">
-                <span>Contact Us</span>
-              </a>
-            </div>
+    <div class="container banner">
+      <div class="blob">
+        <svg
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 310 350"
+        >
+          <path
+            d="M156.4,339.5c31.8-2.5,59.4-26.8,80.2-48.5c28.3-29.5,40.5-47,56.1-85.1c14-34.3,20.7-75.6,2.3-111  c-18.1-34.8-55.7-58-90.4-72.3c-11.7-4.8-24.1-8.8-36.8-11.5l-0.9-0.9l-0.6,0.6c-27.7-5.8-56.6-6-82.4,3c-38.8,13.6-64,48.8-66.8,90.3c-3,43.9,17.8,88.3,33.7,128.8c5.3,13.5,10.4,27.1,14.9,40.9C77.5,309.9,111,343,156.4,339.5z"
+          />
+        </svg>
+      </div>
+      <div class="row about">
+        <div class="col hide-img p-5 mt-5" data-aos="fade-up-right">
+          <img src="./assets/images/index/about.png" alt="banner image" />
+        </div>
+        <div class="col p-5" data-aos="fade-up-left">
+          <h2 class="title">About Us</h2>
+          <p class="text">
+            RTech is a dynamic company specializing in Information Technology,
+            Digital Marketing Training, Event Management, and Technical Services
+            (MEP). With a commitment to excellence, we deliver innovative
+            solutions to meet diverse client needs.
+          </p>
+          <p class="text">
+            Our experienced team ensures seamless integration of technology,
+            flawless events, and top-notch technical services, making us a
+            trusted industry leader.
+          </p>
+          <div class="btn-wrapper">
+            <a href="./frontend/contact.html" class="btn">
+              <span>Contact Us</span>
+            </a>
           </div>
         </div>
       </div>
-    </section>
+    </div>
     <!-- break -->
-    <div class="container vm mt-lg-5">
-      <div class="row justify-content-center justify-content-lg-evenly">
-        <div class="col-5">
-          <div class="card text-center">
-            <div class="card-body p-5">
-              <div
-                class="icon-box d-flex flex-column justify-content-center align-items-center"
-              >
-                <i class="fa-solid fa-rocket"></i>
-                <h3>Mission</h3>
-                <p>
-                  At R-Tech, our mission is to create a world where innovation,
-                  excellence, and creativity thrive. We are committed to making
-                  a positive impact on businesses and individuals through our
-                  expertise in various fields. Our dedication to empowering the
-                  next generation of talent in science and technology drives us
-                  forward.
-                </p>
-              </div>
-            </div>
-          </div>
+    <div class="container mb-5 mt-5">
+      <div class="row" data-aos="zoom-in-up">
+        <div class="col p-5" style="font-size: larger">
+          <h1>
+            <i class="fa-solid fa-magnifying-glass"></i> Our
+            <span class="heading">Vision.</span>
+          </h1>
+          <p class="justify lh-lg">
+            Our vision is to be a catalyst for positive change and progress in
+            the fields of technology, design, and education. We aim to be
+            recognized as a trusted partner for our clients and a source of
+            inspiration for budding talent in science and technology. Together,
+            we'll shape a future where possibilities are limitless.
+          </p>
         </div>
-        <div class="col-5">
-          <div class="card text-center">
-            <div class="card-body p-5" style="height: 27.6rem">
-              <div
-                class="icon-box d-flex flex-column justify-content-center align-items-center"
-              >
-                <i class="fa-solid fa-bullseye"></i>
-                <h3>Vision</h3>
-                <p>
-                  Our vision is to be a catalyst for positive change and
-                  progress in the fields of technology, design, and education.
-                  We aim to be recognized as a trusted partner for our clients
-                  and a source of inspiration for budding talent in science and
-                  technology. Together, we'll shape a future where possibilities
-                  are limitless.
-                </p>
-              </div>
-            </div>
-          </div>
+        <div class="col">
+          <img src="./assets/images/index/vision.png" alt="vision" />
+        </div>
+      </div>
+      <div class="row" data-aos="zoom-in-up">
+        <div class="col">
+          <img src="./assets/images/index/mission.png" alt="mission" />
+        </div>
+        <div class="col p-5 mt-5" style="font-size: larger">
+          <h1>
+            <i class="fa-solid fa-rocket"></i> Our
+            <span class="heading">Mission.</span>
+          </h1>
+          <p class="justify lh-lg">
+            At RTech, our mission is to create a world where innovation,
+            excellence, and creativity thrive. We are committed to making a
+            positive impact on businesses and individuals through our expertise
+            in various fields. Our dedication to empowering the next generation
+            of talent in science and technology drives us forward.
+          </p>
         </div>
       </div>
     </div>
@@ -209,83 +216,112 @@
     <!-- our services section start -->
     <section class="our-services">
       <div class="heading-section">
-        <div class="container mb-5">
+        <div class="container mb-5" data-aos="zoom-in">
           <h1>Our <span class="heading">Services.</span></h1>
         </div>
       </div>
-      <div class="row">
-        <div class="col">
-          <div class="service service1">
-            <i class="fa-solid fa-microchip"></i>
-            <h4>Information Technology</h4>
-            <p>
-              Unlocking Possibilities: Elevate your business with our IT
-              services, offering diverse digital solutions tailored just for
-              you.
-            </p>
-            <a href="./frontend/info.html" class="cta"
-              >Read More <span class="ti-angle-right"></span
-            ></a>
+      <div class="container">
+        <div class="row" data-aos="zoom-in-up">
+          <div class="col">
+            <div class="service service1">
+              <i class="fa-solid fa-microchip"></i>
+              <h4>Information Technology</h4>
+              <p>
+                Unlocking Possibilities: Elevate your business with our IT
+                services, offering diverse digital solutions tailored just for
+                you.
+              </p>
+              <a href="./frontend/info.html" class="cta"
+                >Read More <span class="ti-angle-right"></span
+              ></a>
+            </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="service service2">
-            <i class="fa-solid fa-robot"></i>
-            <h4>Science & Technology</h4>
-            <p>
-              Bridging academia and industry, our platform lets students
-              showcase projects for potential hiring or project acquisition.
-            </p>
-            <a href="./frontend/science.html" class="cta"
-              >Read More <span class="ti-angle-right"></span
-            ></a>
+          <div class="col">
+            <div class="service service2">
+              <i class="fa-solid fa-robot"></i>
+              <h4>Science & Technology</h4>
+              <p>
+                Bridging academia and industry, our platform lets students
+                showcase projects for potential hiring or project acquisition.
+              </p>
+              <a href="./frontend/science.html" class="cta"
+                >Read More <span class="ti-angle-right"></span
+              ></a>
+            </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="service service5">
-            <i class="fa-solid fa-magnifying-glass-chart"></i>
-            <h4>Digital Marketing Training</h4>
-            <p>
-              Unlock Your Potential: Transform Your Skills with Our Digital
-              Marketing Training, Offering Tailored Strategies for Success.
-            </p>
-            <a href="./frontend/coming-soon.html" class="cta"
-              >Read More <span class="ti-angle-right"></span
-            ></a>
+          <div class="col">
+            <div class="service service5">
+              <i class="fa-solid fa-magnifying-glass-chart"></i>
+              <h4>Digital Marketing Training</h4>
+              <p>
+                Unlock Your Potential: Transform Your Skills with Our Digital
+                Marketing Training, Offering Tailored Strategies for Success.
+              </p>
+              <a href="./frontend/coming-soon.html" class="cta"
+                >Read More <span class="ti-angle-right"></span
+              ></a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col d-flex justify-content-end">
-          <div class="service service4">
-            <i class="fa-solid fa-screwdriver-wrench"></i>
-            <h4>Technical Services</h4>
-            <p>
-              Enhancing Projects: MEP technical services for reliable and
-              efficient infrastructure solutions. Elevate your construction with
-              us.
-            </p>
-            <a href="./frontend/technical.html" class="cta"
-              >Read More <span class="ti-angle-right"></span
-            ></a>
+      <div class="container">
+        <div class="row" data-aos="zoom-in-up">
+          <div class="col d-flex justify-content-end">
+            <div class="service service4">
+              <i class="fa-solid fa-screwdriver-wrench"></i>
+              <h4>Technical Services</h4>
+              <p>
+                Enhancing Projects: MEP technical services for reliable and
+                efficient infrastructure solutions. Elevate your construction
+                with us.
+              </p>
+              <a href="./frontend/technical.html" class="cta"
+                >Read More <span class="ti-angle-right"></span
+              ></a>
+            </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="service service3">
-            <i class="fa-regular fa-handshake"></i>
-            <h4>Event Management</h4>
-            <p>
-              Elevate Your Events: We craft unforgettable experiences through
-              expert event management, tailored to your unique vision and goals.
-            </p>
-            <a href="./frontend/event.html" class="cta"
-              >Read more <span class="ti-angle-right"></span
-            ></a>
+          <div class="col">
+            <div class="service service3">
+              <i class="fa-regular fa-handshake"></i>
+              <h4>Event Management</h4>
+              <p>
+                Elevate Your Events: We craft unforgettable experiences through
+                expert event management, tailored to your unique vision and
+                goals.
+              </p>
+              <a href="./frontend/event.html" class="cta"
+                >Read more <span class="ti-angle-right"></span
+              ></a>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <!-- our services section start -->
+
+    <!-- download company profile start -->
+    <div class="container cp mt-5">
+      <div class="heading-section">
+        <div class="container mb-5" data-aos="zoom-in">
+          <h1>Our Company<span class="heading">Profile</span></h1>
+          <p>
+            Unlock a world of insights and explore our extensive range of
+            services. Download our company profile to discover how we can meet
+            your needs and exceed your expectations.
+          </p>
+          <button class="btn">
+            <span></span>
+            <a
+              href="./assets/RTech Company Profile.pdf"
+              download="RTech_Company_Profile"
+            >
+              Download
+            </a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- download company profile end -->
 
     <!-- footer start -->
     <footer class="footer-section">
@@ -449,6 +485,8 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <!-- AOS JS File -->
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js"></script>
     <!-- custom js file -->
     <script src="./assets/index.js"></script>
   </body>
