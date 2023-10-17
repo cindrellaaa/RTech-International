@@ -128,27 +128,51 @@
           src="./assets/images/index/ST.mp4"
         ></video>
         <video class="video-slide" autoplay muted loop src=""></video>
-        <video class="video-slide" autoplay muted loop src=""></video>
-        <video class="video-slide" autoplay muted loop src=""></video>
+        <video
+          class="video-slide"
+          autoplay
+          muted
+          loop
+          src="./assets/images/index/EM.mp4"
+        ></video>
+        <video
+          class="video-slide"
+          autoplay
+          muted
+          loop
+          src="./assets/images/index/TS.mp4"
+        ></video>
 
         <div class="content active container">
           <div class="row">
             <div class="col-5">
-              <h1>Digital Marketing</h1>
-              <p class="mb-4">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis
-                quo officiis suscipit! Nobis nihil modi possimus odio, fuga
-                consectetur aut quasi minima odit adipisci hic rerum perferendis
-                ducimus omnis accusamus dicta ab placeat ad cum? Dolore harum
-                exercitationem ea dolores adipisci cupiditate nulla, placeat sed
-                excepturi odit consequatur laboriosam veritatis?
+              <h1>Are you ready to become a digital marketing maven?</h1>
+              <p>
+                In a world where the digital realm is the marketplace,
+                understanding digital marketing is not just beneficial, it's
+                crucial. Whether you're a business owner looking to expand your
+                online presence, a marketer aiming to level up your skills, or
+                someone seeking a rewarding career change, our training program
+                is your stepping stone to success.
               </p>
+              <div class="col points mb-4">
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-circle-arrow-right mx-4"></i>SEO
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-arrow-right mx-4"></i>Social
+                    Media Marketing
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-arrow-right mx-4"></i>Google
+                    Analytics
+                  </li>
+                </ul>
+              </div>
               <button class="btn">
                 <span></span>
-                <a
-                  href="./assets/RTech Company Profile.pdf"
-                  download="RTech_Company_Profile"
-                >
+                <a href="#" download="Digital_Marketing_Syllabus">
                   Download Syllabus
                 </a>
               </button>
@@ -160,16 +184,22 @@
           <div class="row justify-content-evenly">
             <div class="col-5"></div>
             <div class="col-5 justify-content-end">
-              <h1>Science & Technology</h1>
-              <p class="mb-4">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis
-                quo officiis suscipit! Nobis nihil modi possimus odio, fuga
-                consectetur aut quasi minima odit adipisci hic rerum perferendis
-                ducimus omnis accusamus dicta ab placeat ad cum? Dolore harum
-                exercitationem ea dolores adipisci cupiditate nulla, placeat sed
-                excepturi odit consequatur laboriosam veritatis?
+              <h1 class="mb-4">
+                Ready to shine in the world of Science and Technology?
+              </h1>
+              <p>
+                In an ever connected world, where technology drives progress,
+                your skills and expertise are a valuable asset. Whether you're
+                an professional looking to make your mark on the global stage, a
+                budding innovator with groundbreaking ideas, or an enthusiast
+                aiming to take your skills to the next level, our platform is
+                your pathway to recognition and success.
               </p>
-              <a href="./frontend/science.html">Read More</a>
+              <p class="mb-5">
+                Begin your path to international acclaim. Contact us for more
+                information or register now.
+              </p>
+              <a href="./frontend/contact.html">Contact Us</a>
             </div>
           </div>
         </div>
@@ -190,20 +220,48 @@
             <div class="col-5"></div>
           </div>
         </div>
-        <div class="content container"></div>
-        <div class="content container">
+        <div class="content container st">
+          <div class="row justify-content-evenly">
+            <div class="col-5"></div>
+            <div class="col-5">
+              <h1 class="mb-4">
+                Elevate Your Occasions with Our Expert Event Management Services
+              </h1>
+              <p>
+                In a busy world, where making moments memorable can be a
+                challenge, professional event management is your assurance of a
+                flawless occasion. Whether you're planning a corporate event, a
+                wedding, a conference, or a social gathering, our services
+                guarantee a stress-free and outstanding event.
+              </p>
+              <p class="mb-5">
+                Start your journey towards memorable events. Contact us today
+                for more information or request a consultation for your upcoming
+                event.
+              </p>
+              <a href="./frontend/contact.html">Contact Us</a>
+            </div>
+          </div>
+        </div>
+        <div class="content container st">
           <div class="row">
             <div class="col-5">
-              <h1>Technical Services</h1>
-              <p class="mb-4">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis
-                quo officiis suscipit! Nobis nihil modi possimus odio, fuga
-                consectetur aut quasi minima odit adipisci hic rerum perferendis
-                ducimus omnis accusamus dicta ab placeat ad cum? Dolore harum
-                exercitationem ea dolores adipisci cupiditate nulla, placeat sed
-                excepturi odit consequatur laboriosam veritatis?
+              <h1 class="mb-4">
+                Elevate Your Infrastructure with MEP Excellence
+              </h1>
+              <p>
+                Don't miss the opportunity to enhance your infrastructure with
+                the best in the business. Embark on a journey of precision and
+                innovation with RTech. Partner with us for your MEP needs, and
+                rest assured that your project will meet and exceed industry
+                standards.
               </p>
-              <a href="./frontend/technical.html">Read More</a>
+              <p class="mb-4">
+                Start your journey towards MEP excellence. Contact us today for
+                more information or request a consultation for your upcoming
+                project.
+              </p>
+              <a href="./frontend/contact.html">Contact Us</a>
             </div>
             <div class="col-5"></div>
           </div>
@@ -598,10 +656,13 @@
     </footer>
     <!-- foorter end -->
 
+    <!-- video slider section start-->
     <script>
       var btns = document.querySelectorAll(".nav-btn");
       var slides = document.querySelectorAll(".video-slide");
       var contents = document.querySelectorAll(".content");
+
+      var currentSlide = 0;
 
       var slideNav = function (manual) {
         btns.forEach((btn) => {
@@ -617,6 +678,7 @@
         btns[manual].classList.add("active");
         slides[manual].classList.add("active");
         contents[manual].classList.add("active");
+        currentSlide = manual;
       };
 
       btns.forEach((btn, i) => {
@@ -624,7 +686,21 @@
           slideNav(i);
         });
       });
+
+      function autoChangeSlide() {
+        var nextSlide = (currentSlide + 1) % btns.length;
+        slideNav(nextSlide);
+      }
+
+      var slideInterval = setInterval(autoChangeSlide, 8000);
+
+      btns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          clearInterval(slideInterval);
+        });
+      });
     </script>
+    <!-- video slider section end -->
 
     <!-- Bootstrap JS CDN -->
     <script
