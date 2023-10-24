@@ -174,9 +174,8 @@
         </div>
 
         <form
-          action="../backend/contact.php"
-          method="post"
-          role="form"
+          action="../backend/contactform.php"
+          method="POST"
           class="php-email-form p-3 p-md-4"
         >
           <div class="row">
@@ -201,18 +200,31 @@
               />
             </div>
           </div>
-          <div class="form-group">
-            <input
-              type="text"
-              class="form-control"
-              name="subject"
-              id="subject"
-              placeholder="Subject"
-              required
-            />
+          <div class="row">
+            <div class="col-xl-6 form-group">
+              <input
+                type="text"
+                name="subject"
+                class="form-control"
+                id="subject"
+                placeholder="Subject"
+                required
+              />
+            </div>
+            <div class="col-xl-6 form-group">
+              <input
+                type="text"
+                class="form-control"
+                name="number"
+                id="number"
+                placeholder="Your Number"
+                required
+              />
+            </div>
           </div>
           <div class="form-group">
             <textarea
+              id="message"
               class="form-control"
               name="message"
               rows="5"
@@ -228,7 +240,7 @@
             </div>
           </div>
           <div class="text-center">
-            <button type="submit">Send Message</button>
+            <button type="submit" value="Send">Send Message</button>
           </div>
         </form>
         <!--End Contact Form -->
@@ -355,6 +367,9 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <!-- smtp js -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- send mail js -->
     <!-- custom js file -->
     <script src="../assets/index.js"></script>
   </body>
