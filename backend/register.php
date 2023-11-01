@@ -31,7 +31,7 @@ function sendemail_verify($name,$email,$verification_code){
     <h3>You have registered with R-Tech International</h2>
     <h5>Verify your email to login with the link given below:</h5>
     <br>
-    <a href='http://localhost/rtech/backend/register.php/verify-email.php?token=$verification_code'>Click Here To Verify</a>
+    <a href='http://localhost/rtech/backend/verify-email.php?token=$verification_code'>Click Here To Verify</a>
     ";
     $mail->Body    = $email_template;
     $mail->send();

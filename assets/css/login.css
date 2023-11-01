@@ -8,7 +8,6 @@ textarea {
     border: none !important;
     border: 1px solid #F3E5F5 !important;
     font-size: 16px !important;
-    color: #000 !important;
     font-weight: 400
 }
 
@@ -68,13 +67,44 @@ button:focus {
 }
 
 .form-control-label {
-    font-size: 12px;
+    font-size: 18px;
     margin-left: 15px
 }
 
+.alert{
+    display: flex;
+    align-items: center;
+}
+
+.alert .errorIcon{
+    margin-right: 8px;
+    color: #D93025;
+    font-size: 18px;
+    display: none;
+}
+
+.alert .text{
+    color: #414141;
+    font-size: 18px;
+    font-weight: 500;
+}
+
 .msg-info {
-    padding-left: 15px;
-    margin-bottom: 30px
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.input-with-icon {
+    position: relative;
+}
+
+.input-with-icon .icon {
+    font-size: 20px;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
 }
 
 .btn-color {
@@ -104,6 +134,14 @@ button:focus {
 .btn-white:hover {
     color: #fff;
     background-image: linear-gradient(to right, #2376ae, #c16ecf)
+}
+
+button[name="register_btn"].btn-block {
+    cursor: not-allowed;
+}
+
+button[name="register_btn"].btn-block.active {
+    cursor: pointer;
 }
 
 a {
@@ -153,3 +191,4 @@ a:hover {
         margin-bottom: 50px !important
     }
 }
+
