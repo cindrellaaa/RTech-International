@@ -300,7 +300,6 @@ session_start();
         alertIcon = document.querySelector(".errorIcon"),
         alertText = document.querySelector(".text"),
         submitBtn = document.querySelector("#button");
-
     // Password hide and unhide
     pwShow.addEventListener("click", () => {
         if (psw.type === "password" && confirmPsw.type === "password") {
@@ -318,37 +317,45 @@ session_start();
     psw.addEventListener("input", () => {
         let inputValue = psw.value.trim();
 
-        if (inputValue.length >= 8) {
-            checkPasswordMatch();
-        } else {
-            submitBtn.setAttribute("disabled", true);
-            submitBtn.classList.remove("active");
-            confirmPsw.value = "";
-            alertText.innerText = "Enter at least 8 characters";
-            alertText.style.color = "#a6a6a6";
-        }
-    });
-
-    confirmPsw.addEventListener("input", () => {
-        checkPasswordMatch();
-    });
-
-    function checkPasswordMatch() {
-        if (psw.value === confirmPsw.value) {
-            alertText.innerText = "Password match";
-            alertText.style.color = "#4070F4";
-            alertIcon.style.display = "none";
-            submitBtn.removeAttribute("disabled");
-            submitBtn.classList.add("active");
-        } else {
+        if (inputValue.length >= 8 && psw.value === confirmPsw.value) {
+            enableSubmitButton();
+            alertText.style.color = "#000";
+        } else if (inputValue.length >= 8) {
             alertText.innerText = "Password do not match";
             alertText.style.color = "#D93025";
             alertIcon.style.display = "block";
             submitBtn.setAttribute("disabled", true);
             submitBtn.classList.remove("active");
+        } else {
+            disableSubmitButton("Enter at least 8 characters");
         }
+    });
+
+    confirmPsw.addEventListener("input", () => {
+        if (psw.value === confirmPsw.value && psw.value.length >= 8) {
+            enableSubmitButton();
+        } else {
+            disableSubmitButton("Enter at least 8 characters");
+        }
+    });
+
+    function enableSubmitButton() {
+        alertText.innerText = "Password match";
+        alertText.style.color = "#4070F4";
+        alertIcon.style.display = "none";
+        submitBtn.removeAttribute("disabled");
+        submitBtn.classList.add("active");
+    }
+
+    function disableSubmitButton(message) {
+        alertText.innerText = message;
+        alertText.style.color = "#D93025";
+        alertIcon.style.display = "block";
+        submitBtn.setAttribute("disabled", true);
+        submitBtn.classList.remove("active");
     }
     </script>
+
 
     <!-- Bootstrap JS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"

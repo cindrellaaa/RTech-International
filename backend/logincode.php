@@ -22,7 +22,7 @@ include('DBController.php');
                     'email' => $row['email']
                 ];
                 $_SESSION['status'] = "Login Successful";
-                echo '<script>window.location.href = "../frontend/dashboard.php";</script>';
+                echo '<script>window.location.href = "../frontend/user/dashboard.php";</script>';
                 exit(0);
             }
             else{

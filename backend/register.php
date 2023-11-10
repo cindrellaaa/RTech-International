@@ -15,7 +15,7 @@ function sendemail_verify($name,$email,$verification_code){
                                                
     $mail->Host       = 'smtp.gmail.com';                                 
     $mail->Username   = 'orphanageotpsender@gmail.com';                
-    $mail->Password   = 'bhikjccnaizfmxae';    
+    $mail->Password   = '';    
                     
     $mail->SMTPSecure = "tls";            
     $mail->Port       = 587;                                
